@@ -4,5 +4,7 @@ class User < ApplicationRecord
     validates :nickname, length: { maximum: 20 }, uniqueness: true
     validates :password, length: { in: 6..20 }
   end
+
+  has_one :score
   
 end
