@@ -2,10 +2,10 @@
 
 ## usersテーブル
 
-| column   | type    | options     |
-| -------- | ------- | ----------- |
-| nickname | string  | null: false |
-| password | string  | null: false |
+| column   | type    | options                   |
+| -------- | ------- | ------------------------- |
+| nickname | string  | null: false, unique: true |
+| password | string  | null: false               |
 
 ### Association
 
