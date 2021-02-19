@@ -75,7 +75,7 @@ document.addEventListener("DOMContentLoaded", function(){
   ];
 
   //テトロミノの形
-  let tetroT = Math.floor( Math.random() * (TETRO_TYPES.length-1)) + 1;;
+  let tetroT = Math.floor( Math.random() * (TETRO_TYPES.length-1)) + 1;
   //テトロミノ本体
   let tetro = TETRO_TYPES[ tetroT ];
   //テトロミノの座標
@@ -107,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }
     }
   }
+
   //ブロック一つを描画する
   function drawBlock(x,y,c)
   {
@@ -118,6 +119,7 @@ document.addEventListener("DOMContentLoaded", function(){
     con.strokeStyle="black";
     con.strokeRect(px, py, BLOCK_SIZE, BLOCK_SIZE);
   }
+  
   //全部描画する
   function drawAll()
   {
