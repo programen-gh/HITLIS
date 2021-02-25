@@ -200,7 +200,7 @@ document.addEventListener("DOMContentLoaded", function(){
       }
 
       if(flag){
-        for(let ny = y; ny>0; ny--){
+        for(let ny=y; ny>0; ny--){
           for(let nx=0; nx<FIELD_COL; nx++){
             field[ny][nx] = field[ny-1][nx];
           }
